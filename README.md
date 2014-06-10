@@ -49,5 +49,4 @@ Return a secure random hex string of the specified size in bytes.
 
 Copyright © 2014 Dennis Zhuang [killme2008@gmail.com]
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the Eclipse Public License 1.0
