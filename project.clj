@@ -4,4 +4,6 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [commons-codec "1.6"]])
+                 [commons-codec "1.6"]]
+  :global-vars {*warn-on-reflection* true
+                *assert* false})

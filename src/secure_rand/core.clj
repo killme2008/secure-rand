@@ -27,7 +27,7 @@
   n (default 1) (exclusive)."
   {:added "0.1"
    :static true}
-  ([] (-> threadlocal-random (.get) (.nextDouble)))
+  ([] (.nextDouble ^SecureRandom (.get threadlocal-random)))
   ([n] (* n (rand))))
 
 (defn rand-int
@@ -49,7 +49,7 @@
   "Returns a secure random byte array of the specified size."
   [size]
   (let [bs (byte-array size)]
-    (.nextBytes (.get threadlocal-random) bs)
+    (.nextBytes ^SecureRandom (.get threadlocal-random) bs)
     bs))
 
 (defn base64
